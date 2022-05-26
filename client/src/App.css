@@ -1,0 +1,19 @@
+
+/*
+  Se definirán los estilos generales en este css y se usarán modulos para cada página y/o componente en específico
+*/
+
+:root{
+  --blanco: #FFFFFF;
+}
+
+html{
+  box-sizing: border-box;
+  background-color: grey;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+

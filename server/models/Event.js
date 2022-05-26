@@ -12,9 +12,9 @@ module.exports = (sequelize, DataTypes) => {
         },
         price:{
             type: DataTypes.FLOAT,
+            allowNull: false,
             validate:{
                 isFloat: true,
-                allowNull: false,
             }
         },
         active:{
@@ -23,16 +23,17 @@ module.exports = (sequelize, DataTypes) => {
         },
         date:{
             type: DataTypes.DATEONLY,
+            allowNull: false,
             validate:{
                 isDate: true,
-                allowNull: false,
+                
             }
         },
         payDate:{
             type: DataTypes.DATEONLY,
+            allowNull: false,
             validate: {
                 isDate: true,
-                allowNull: false,
             }
         },
         image: {
