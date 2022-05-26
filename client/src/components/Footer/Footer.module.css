@@ -1,0 +1,36 @@
+.container
+{
+    color: var(--blanco);
+    background-color: var(--secundario);
+    height: 179px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.logo{
+    padding-left: 2rem;
+    width: 45%;
+}
+
+.home{
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    
+}
+
+.links
+{
+    display: grid;
+    align-items: center;
+    margin-right: 2rem;
+    justify-items: right;
+    margin-left: 0rem;
+}
+
+.footerLinks
+{
+    text-decoration: underline;
+}

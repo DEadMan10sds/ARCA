@@ -5,11 +5,18 @@
 
 :root{
   --blanco: #FFFFFF;
+  --principal: #262628;
+  --secundario: rgba(31, 31, 35);
+  --card: #3F3F44;
+  --inhabilitado: #5F5F5F;
+  --rojo: #E51515;
+  --verde: #34AE20;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 html{
   box-sizing: border-box;
-  background-color: grey;
+  background-color: var(--principal);
 }
 
 *, *:before, *:after {
@@ -17,3 +24,18 @@ html{
 }
 
 
+a{
+  color: var(--blanco); 
+  text-decoration: none;
+}
+
+ul
+{
+  list-style: none;
+}
+
+li
+{
+  float: left;
+  margin: 1rem;
+}

@@ -17,6 +17,10 @@ module.exports = (sequelize, DataTypes) => {
                 isFloat: true,
             }
         },
+        quota: {
+            type: DataTypes.INTEGER,
+            allowNull: false, 
+        },
         active:{
             type: DataTypes.BOOLEAN,
             allowNull: false,
