@@ -54,3 +54,14 @@ label
     margin: .3rem;
     margin-left: 0;
 }
+
+.buttonContainer
+{
+    margin: auto;
+    //border: 1px solid var(--blanco);
+    width: 7rem;
+    height: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

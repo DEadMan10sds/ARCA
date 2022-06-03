@@ -27,7 +27,6 @@ function Register() {
             else
             {
                 localStorage.setItem('accessToken', response.data.token);
-                console.log(response.data);
                 setAuthState({
                     id: response.data.id,
                     name: response.data.name,

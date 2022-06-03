@@ -20,16 +20,19 @@ import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import Location from './pages/Location';
 import Donations from './pages/Donations';
+import Cart from './pages/Cart';
+import Us from './pages/Us';
 
 
 function App() {
-
   const [authState, setAuthState] = useState({
     id: 0,
     name:'',
     surname:'',
     email: '',
     role: '',
+    eventID: [],
+    ticketAmount: [],
     status: false
   });
 
@@ -47,6 +50,8 @@ function App() {
             surname:'',
             email: '',
             role: '',
+            eventID: [],
+            ticketAmount: [],
             status: false
           })
       else setAuthState(
@@ -56,11 +61,14 @@ function App() {
           surname: response.data.surname,
           email: response.data.email,
           role: response.data.role,
+          eventID: [],
+          ticketAmount: [],
           status: true
         }
       );
     });
   }, []);
+
   return (
     <AuthContext.Provider value={{authState, setAuthState}}>
       <Router>
@@ -90,8 +98,16 @@ function App() {
               <Route path="/Dashboard" element={<Dashboard />}/>
             </>
           )}
+          {
+            authState.role === 'user' && (
+              <>
+                <Route path="/Cart" element={<Cart />}/>
+              </>
+            )
+          }
           <Route path='/Location' element={<Location/>}/>
           <Route path='/Donations' element={<Donations/>}/>
+          <Route path='/Us' element={<Us/>}/>
         </Routes>
       <Footer />
       </Router>

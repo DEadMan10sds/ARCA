@@ -10,10 +10,10 @@ function Footer() {
             </div>
             <div className={styles.links}>
                 <ul>
-                    <li><a className={styles.footerLinks} href='/'>Quienes somos</a></li>
+                    <li><a className={styles.footerLinks} href='/Us'>Quienes somos</a></li>
                     <li><a className={styles.footerLinks} href='/Donations'>Donaciones</a></li>
                     <li><a className={styles.footerLinks} href='/Location'>Ubicación</a></li>
-                    <li><a className={styles.footerLinks} href='/'>Contacto</a></li>
+                    
                 </ul>
             </div>
         </footer>
@@ -22,3 +22,5 @@ function Footer() {
 }
 
 export default Footer
+
+//<li><a className={styles.footerLinks} href='/'>Contacto</a></li>

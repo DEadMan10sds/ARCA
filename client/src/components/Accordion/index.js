@@ -161,7 +161,7 @@ function Accordion({eventData}) {
                                 <Field as="textarea" maxLength="200" name="description" id="Description" placeholder={event.description} className={styles.description} />
                             </div>
                             <div className={styles.buttonContainer}>
-                                <Button variant='primary' onClick={()=>{setIsOpen(false);}} ><span>Cancelar</span></Button>
+                                <Button variant='warning' onClick={()=>{setIsOpen(false);}} ><span>Cancelar</span></Button>
                                 <Button variant='primary' onClick={()=> {}} type="submit"><span>Aceptar</span></Button>
                             </div>
                         </div>

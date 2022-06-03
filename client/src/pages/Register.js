@@ -46,7 +46,6 @@ function Register() {
     };
 
     const aux = () => {
-        console.log('hola');
     };
 
   return (
