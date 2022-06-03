@@ -21,6 +21,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false, 
         },
+        restantQuota: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
         active:{
             type: DataTypes.BOOLEAN,
             allowNull: false,
@@ -30,7 +34,6 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             validate:{
                 isDate: true,
-                
             }
         },
         payDate:{
@@ -44,6 +47,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.BLOB
         }
     });
+
+    Event.associate = (models) => {
+        Event.hasMany(models.List, {onDelete: 'CASCADE'});
+    }
 
     return Event;
 }

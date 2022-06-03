@@ -11,9 +11,9 @@ module.exports = (sequelize, DataTypes) => {
         },
         email: {
             type: DataTypes.STRING,
+            allowNull: false,
             validate: {
                 isEmail: true,
-                allowNull: false,
             }
         },
         phoneNumber: {
@@ -25,8 +25,21 @@ module.exports = (sequelize, DataTypes) => {
             validate: {
                 isDate: true,
             }
+        }, 
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        role: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            defaultValue: 'user'
         }
     });
+
+    User.associate = (models) => {
+        User.hasMany(models.List, {onDelete: 'CASCADE'});
+    }
 
     return User;
 }

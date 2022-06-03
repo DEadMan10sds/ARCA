@@ -1,0 +1,18 @@
+.container
+{
+    margin: auto;
+    text-align: center;
+}
+
+.icon
+{
+    color: white;
+    font-size: 10rem;
+    margin: 5rem auto ;
+}
+
+.icon:hover
+{
+    font-size: 11rem;
+    transition: 0.2s;
+}

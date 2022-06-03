@@ -1,0 +1,73 @@
+/* Los nombres de clases están sujetos a cambios. */
+
+.button {
+  border: blue 1px solid;
+  align-items: center;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  font-weight: 500;
+  justify-content: center;
+  height: 40px;
+  padding: 0.6em;
+  transition: .3s ease-in-out;
+}
+
+.disabled {
+  background-color: var(--inhabilitado);
+  color: var(--negro);
+  pointer-events: none;
+  margin: 0;
+}
+
+.primary {
+  background-color: var(--verde);
+  color: white;
+}
+
+.primary:hover {
+  background-color: #3c64b1;
+  cursor: pointer;
+}
+
+.secondary {
+  background-color: rgb(224 20 37);
+}
+
+.secondary:hover {
+  background-color: rgb(231 50 65);
+}
+
+.add
+{
+  background-color: var(--card);
+  color: white;
+  cursor: pointer;
+  height: 3rem;
+  gap: .5rem;
+  font-size: 1rem;
+}
+
+.add:hover
+{
+  background-color: var(--secundario);
+  color: white;
+}
+
+.warning{
+  background-color: var(--rojo);
+  cursor: pointer;
+}
+
+.warning:hover{
+  background-color: var(--rojoHover);
+}
+
+.buttonContainer
+{
+  border: 1px solid var(--blanco);
+  margin: auto;
+}

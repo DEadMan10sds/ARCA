@@ -1,0 +1,65 @@
+
+.container
+{
+    color: var(--blanco);
+    background-color: var(--secundario);
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.logo
+{
+    margin-left: 2rem;
+}
+
+.home
+{
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.options
+{
+    //border: blue .1rem solid;
+    //width: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    //gap: .2rem;
+    font-size: 1.5rem;
+    margin-left: 0rem;
+    align-items: center;
+    justify-items: right;
+}
+
+a
+{
+    text-align: center;
+    //border: green 1px solid;
+    width: 12rem;
+}
+
+a:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.cart
+{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    width: 4rem;
+}
+
+
+#cartStyled:hover
+{
+    stroke-width: .15rem;
+    cursor: pointer;
+}

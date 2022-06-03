@@ -11,8 +11,8 @@ function Footer() {
             <div className={styles.links}>
                 <ul>
                     <li><a className={styles.footerLinks} href='/'>Quienes somos</a></li>
-                    <li><a className={styles.footerLinks} href='/'>Donaciones</a></li>
-                    <li><a className={styles.footerLinks} href='/'>Ubicación</a></li>
+                    <li><a className={styles.footerLinks} href='/Donations'>Donaciones</a></li>
+                    <li><a className={styles.footerLinks} href='/Location'>Ubicación</a></li>
                     <li><a className={styles.footerLinks} href='/'>Contacto</a></li>
                 </ul>
             </div>
